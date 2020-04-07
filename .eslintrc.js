@@ -14,5 +14,6 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
     '@typescript-eslint/no-empty-function': ['error', { allow: ['constructors'] }],
+    '@typescript-eslint/no-explicit-any': ['off'],
   },
 };
