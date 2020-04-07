@@ -1,0 +1,29 @@
+{
+  "name": "serverless-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "prebuild": "yarn clean",
+    "build": "tsc --build",
+    "lint": "eslint ./src --ext .ts",
+    "predev": "yarn clean",
+    "dev": "tsc-watch -b --onSuccess \"node ./dist/index.js\""
+  },
+  "devDependencies": {
+    "@types/node": "13.11.0",
+    "@typescript-eslint/eslint-plugin": "2.27.0",
+    "@typescript-eslint/parser": "2.27.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-jest": "23.8.2",
+    "prettier": "2.0.4",
+    "rimraf": "3.0.2",
+    "tsc-watch": "4.2.3",
+    "typescript": "3.8.3"
+  },
+  "dependencies": {
+    "axios": "0.19.2"
+  }
+}

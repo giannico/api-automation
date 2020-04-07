@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Always include these settings
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    // These settings are totally up to you
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "lib": ["dom", "es5", "es2017"],
+    "rootDir": "src",
+    "outDir": "dist"
+  }
+}
