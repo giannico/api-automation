@@ -89,3 +89,6 @@ typings/
 # TypeScript build assets
 dist/
 tsconfig.tsbuildinfo
+
+# Report outputs
+reports/
